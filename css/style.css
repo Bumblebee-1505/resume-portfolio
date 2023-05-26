@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.resume {
+    background-color: rgb(200, 201, 233);
+    padding: 50px;
+}
+
+.resume__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #000 solid;
+    padding-bottom: 20px;
+    padding: 10px;
+}
+
+.resume__header_title {
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.resume__header_subtitle {
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+.resume__header_text {
+    font-size: 3em;
+}
+
+.resume__img {
+    margin-right: 20px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.resume__main_content {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 30px;
+}
+
+.resume__main_content-left {
+    border-right: 1px solid rgb(129, 129, 129);
+    padding-right: 20px;
+}
+
+.resume__content_description {
+    padding: 10px;
+}
+
+.resume__main_title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.resume__content {
+    padding-left: 20px;
+    position: relative;
+}
+
+.resume__shape {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+}
+
+.resume__square {
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+}
+
+.resume__vl {
+    background-color: rgb(129, 129, 129);
+    width: 2px;
+    height: 100%;
+}
+
+.resume__content_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.resume__main_subtitle {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: justify;
+}
+
+
+.resume__period {
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.resume__period_pad {
+    margin-left: 100px;
+}
+
+.resume__content_text {
+    font-size: 1.5em;
+    font-style: italic;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.resume__content_list {
+    padding-left: 50px;
+    font-size: 1.8em;
+    line-height: 2em;
+}
+
+
+
+.resume__contact_description {
+    padding: 10px 0;
+}
+
+.resume__contact_title {
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 43px;
+}
+
+.resume__contact_text {
+    font-size: 1.5em;
+    line-height: 20px;
+}
