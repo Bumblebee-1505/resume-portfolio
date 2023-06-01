@@ -1,0 +1,48 @@
+.about {
+    width: 90%;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.about__content {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.about__content:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.about__img img{
+    width: 300px;
+}
+
+.about__content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 30px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.3rem;
+    text-align: justify;
+}
+
+
+.about__content_text p{
+    padding-left: 30px;
+
+}
+
+.about__content_text ul{
+    padding-left: 30px;
+    line-height: 5rem;
+    font-style: italic;
+}
