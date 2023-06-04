@@ -17,3 +17,11 @@ navLinks.forEach(link => {
         });
     });
 });
+
+// Событие иконок
+
+const footerLink = document.querySelectorAll('footer__contact_link');
+
+footerLink.mousemove = function () {
+    document.querySelector('.footer__icon_tel').addClassList('.')
+}
