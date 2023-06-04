@@ -85,6 +85,17 @@ a {
     list-style: none;
 }
 
+.footer__contacts_title {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.footer__conacts_list {
+    display: flex;
+    gap: 15px;
+}
+
 .footer__nav_link {
     font-size: 2em;
     line-height: 2.5em;
