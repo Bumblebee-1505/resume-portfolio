@@ -30,7 +30,7 @@
     border-radius: 10%;
     font-size: 2rem;
     line-height: 3rem;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     text-align: justify;
 }
 
@@ -42,6 +42,6 @@
 
 .about__content_text ul{
     padding-left: 30px;
-    line-height: 5rem;
+    line-height: 3rem;
     font-style: italic;
 }
