@@ -88,12 +88,18 @@ a {
 .footer__contacts_title {
     font-size: 3em;
     text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+}
+
+.footer__contacts_subtitle {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 .footer__conacts_list {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
 }
 
 .footer__nav_link {
