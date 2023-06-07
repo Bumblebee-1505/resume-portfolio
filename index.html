@@ -13,10 +13,11 @@
     
     <script src="https://kit.fontawesome.com/b654837204.js" crossorigin="anonymous"></script>
 
+    <script src="assets/libs/gsap/gsap.min.js" defer></script>
+    <script src="assets/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="assets/libs/gsap/ScrollSmoother.min.js" defer></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
-
-    
 </head>
 <body>
     <div class="main__container">
@@ -80,11 +81,11 @@
             <div class="container">
                 <section class="about" id="about">
                     <div class="about__content">
-                        <div class="about__img">
+                        <div data-speed=".6" class="about__img">
                             <img src="https://i.pinimg.com/originals/d2/1d/6f/d21d6f63d9d2a28e03486a108726fb73.gif" alt="Смайлик">
                         </div>
 
-                        <div class="about__content_text">
+                        <div data-speed=".6" class="about__content_text">
                             <p>Хеееей, привет! Меня зовут Акмал. Мне 30 лет. Я начинающий IT специалист.</p>
                         </div>
                     </div>
@@ -94,7 +95,7 @@
                             <img src="https://avatars.mds.yandex.net/i?id=b436922a4bc1658bcf440cf97f42886b-5269572-images-thumbs&n=13" alt="Смайлик">
                         </div>
 
-                        <div class="about__content_text">
+                        <div data-speed=".6" class="about__content_text">
                             <p>В этом контенте я хотел бы немного рассказать о себе. С чего бы начать?</p>
                         </div>
                     </div>
@@ -121,11 +122,11 @@
 
                     <div class="about__content">
                         <div class="about__img">
-                            <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/12163337/2cca53b9521f8bf7182e73d0710672a7a071be1a.gif" alt="Картинка">
+                            <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/12163337/2cca53b9521f8bf7182e73d0710672a7a071be1a.gif" alt="Картинка" class="about-icon">
                         </div>
 
                         <div class="about__content_text">
-                            <p>Спустя год, с начала работы, перешел на профессию Системного Администратора. Устанавливал ОС и программы, настраивал ПО под нужд пользователя, сети и роутеры</p>
+                            <p class="about-text">Спустя год, с начала работы, перешел на профессию Системного Администратора. Устанавливал ОС и программы, настраивал ПО под нужд пользователя, сети и роутеры</p>
                         </div>
                     </div>
 
@@ -517,41 +518,125 @@
 
                         <div class="portfolio__content">
 
-                            <a href="#" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/anime__card_css-first/" class="portfolio__items portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
                                     </div>
                                     <div class="portfolio__item_description">
                                         <p class="portfolio__item_title">HTML и CSS</p>
-                                        <p class="portfolio__item_subtitle">Работы участием HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Анимационная карточка на css</p>
                                     </div>
                                 </div>
                             </a>
 
-                            <div class="portfolio__items">
+                            <a href="https://bumblebee-1505.github.io/css__3d-cube/" class="portfolio__items portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
                                     </div>
                                     <div class="portfolio__item_description">
                                         <p class="portfolio__item_title">HTML и CSS</p>
-                                        <p class="portfolio__item_subtitle">Работы участием HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Анимированный 3D куб на css</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="portfolio__items">
+                            <a href="https://bumblebee-1505.github.io/login_css1/" class="portfolio__items portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
                                     </div>
                                     <div class="portfolio__item_description">
                                         <p class="portfolio__item_title">HTML и CSS</p>
-                                        <p class="portfolio__item_subtitle">Работы участием HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Окно для входа в личный кабинет на css</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
+
+                            <a href="https://bumblebee-1505.github.io/css__menu-panel/" class="portfolio__items portfolio__link" target="_blank">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item_card">
+                                        <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
+                                    </div>
+                                    <div class="portfolio__item_description">
+                                        <p class="portfolio__item_title">HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Панель для меню на css</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://bumblebee-1505.github.io/css__svg-text/" class="portfolio__items portfolio__link" target="_blank">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item_card">
+                                        <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
+                                    </div>
+                                    <div class="portfolio__item_description">
+                                        <p class="portfolio__item_title">HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">SVG текст на css</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://bumblebee-1505.github.io/css__text-gradient/" class="portfolio__items portfolio__link" target="_blank">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item_card">
+                                        <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
+                                    </div>
+                                    <div class="portfolio__item_description">
+                                        <p class="portfolio__item_title">HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Текстовый клип с коническимградиентом на css</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://bumblebee-1505.github.io/css__flip-card/" class="portfolio__items portfolio__link" target="_blank">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item_card">
+                                        <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
+                                    </div>
+                                    <div class="portfolio__item_description">
+                                        <p class="portfolio__item_title">HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Карточки открытки на css</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://bumblebee-1505.github.io/css__color-gradient/" class="portfolio__items portfolio__link" target="_blank">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item_card">
+                                        <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
+                                    </div>
+                                    <div class="portfolio__item_description">
+                                        <p class="portfolio__item_title">HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Фоновая заставка с изменением цветов на css</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://bumblebee-1505.github.io/css__timer/" class="portfolio__items portfolio__link" target="_blank">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item_card">
+                                        <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
+                                    </div>
+                                    <div class="portfolio__item_description">
+                                        <p class="portfolio__item_title">HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Таймер на css</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://bumblebee-1505.github.io/css__timer/" class="portfolio__items portfolio__link" target="_blank">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item_card">
+                                        <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
+                                    </div>
+                                    <div class="portfolio__item_description">
+                                        <p class="portfolio__item_title">HTML и CSS</p>
+                                        <p class="portfolio__item_subtitle">Анимированные шарики на css</p>
+                                    </div>
+                                </div>
+                            </a>
                             
                         </div>
                     </div>
@@ -620,8 +705,9 @@
             </div>
         </footer>
     </div>
-
-
+    
     <script src="assets/js/script.js"></script>
+
+    <script src="paroller.js"></script>
 </body>
 </html>
