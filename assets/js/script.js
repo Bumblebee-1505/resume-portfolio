@@ -1,3 +1,5 @@
+// Header
+
 const navLinks = document.querySelectorAll('.header__nav_link');
  
 navLinks.forEach(link => {
@@ -18,10 +20,66 @@ navLinks.forEach(link => {
     });
 });
 
-// Событие иконок
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll('.header__nav_link ').forEach((link) => {
+          let id = link.getAttribute('href').replace('#', '');
+          if (id === entry.target.id) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+    });
+  }, {
+    threshold: 0
+  });
 
-const footerLink = document.querySelectorAll('footer__contact_link');
+  
+  document.querySelectorAll('.section').forEach(section => { observer.observe(section)} );
 
-footerLink.mousemove = function () {
-    document.querySelector('.footer__icon_tel').addClassList('.')
-}
+//   Footer
+
+const footerLinks = document.querySelectorAll('.footer__nav_link');
+ 
+footerLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const section = this.getAttribute('data-section');
+
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(sectionElement => {
+        if (sectionElement.id === section) {
+            sectionElement.classList.remove('none');
+        } else {
+            sectionElement.classList.add('none');
+        }
+        });
+    });
+});
+
+const footerObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll('.footer__nav_link ').forEach((link) => {
+          let id = link.getAttribute('href').replace('#', '');
+          if (id === entry.target.id) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+    });
+  }, {
+    threshold: 0
+  });
+
+  
+  document.querySelectorAll('.section').forEach(section => { footerObserver.observe(section)} );
+
+  

@@ -1,9 +1,20 @@
+.portfolio__content {
+    padding: 100px 0;
+}
+
 .portfolio__title {
     font-size: 5em;
+    font-weight: 900;
     text-align: center;
 }
 
-.portfolio__content {
+.portfolio__subtitle {
+    font-size: 3rem;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolio__items {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -11,19 +22,7 @@
     width: 90%;
 }
 
-.portfolio__title {
-    font-size: 5rem;
-    padding-bottom: 50px;
-    font-weight: 900;
-}
-
-.portfolio__subtitle {
-    font-size: 3rem;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-.portfolio__items {
+.portfolio__link {
     border: 1px solid #000;
     border-radius: 8px;
     background-color: transparent;
@@ -43,7 +42,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.portfolio__items:hover .portfolio__item{
+.portfolio__link:hover .portfolio__item{
     transform: rotateY(180deg);
 }
 

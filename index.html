@@ -26,16 +26,24 @@
                 <nav class="header__nav">
                     <ul class="header__nav_list">
                         <li>
-                            <a href="#" class="header__nav_link" data-section="about">О себе</a>
+                            <a href="#about" class="header__nav_link active" data-section="about">
+                                <span data-text="О&nbsp;себе"></span>О себе
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="header__nav_link" data-section="resume">Резюме</a>
+                            <a href="#resume" class="header__nav_link" data-section="resume">
+                                <span data-text="Резюме"></span>Резюме
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="header__nav_link" data-section="portfolio">Портфолио</a>
+                            <a href="#portfolio" class="header__nav_link" data-section="portfolio">
+                                <span data-text="Портфолио"></span>Портфолио
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="header__nav_link" data-section="cer">Сертификаты</a>
+                            <a href="#cer" class="header__nav_link" data-section="cer">
+                                <span data-text="Сертификаты"></span>Сертификаты
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -79,7 +87,7 @@
 
         <main class="main">
             <div class="container">
-                <section class="about" id="about">
+                <section class="section about" id="about">
                     <div class="about__content">
                         <div data-speed=".6" class="about__img">
                             <img src="https://i.pinimg.com/originals/d2/1d/6f/d21d6f63d9d2a28e03486a108726fb73.gif" alt="Смайлик">
@@ -232,7 +240,8 @@
                         </div>
                     </div>
                 </section>
-                <section class="resume none" id="resume">
+
+                <section class="section resume none" id="resume">
                     <div class="resume__container">
                         <div class="resume__header">
                             <div class="resume__header_content">
@@ -506,19 +515,17 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>                
 
-                
-
-                <section class="portfolio none" id="portfolio">
-                    <div class="container">
+                <section class="section portfolio none" id="portfolio">
+                    <div class="portfolio__content">
                         <p class="portfolio__title">Портфолио работ</p>
 
                         <p class="portfolio__subtitle">HTML и CSS</p>
 
-                        <div class="portfolio__content">
+                        <div class="portfolio__items">
 
-                            <a href="https://bumblebee-1505.github.io/anime__card_css-first/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/anime__card_css-first/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -530,7 +537,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/css__3d-cube/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/css__3d-cube/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -542,7 +549,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/login_css1/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/login_css1/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -554,7 +561,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/css__menu-panel/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/css__menu-panel/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -566,7 +573,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/css__svg-text/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/css__svg-text/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -578,7 +585,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/css__text-gradient/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/css__text-gradient/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -590,7 +597,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/css__flip-card/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/css__flip-card/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -602,7 +609,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/css__color-gradient/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/css__color-gradient/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -614,7 +621,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/css__timer/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/css__timer/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -626,7 +633,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://bumblebee-1505.github.io/css__timer/" class="portfolio__items portfolio__link" target="_blank">
+                            <a href="https://bumblebee-1505.github.io/css__timer/" class="portfolio__link" target="_blank">
                                 <div class="portfolio__item">
                                     <div class="portfolio__item_card">
                                         <img src="https://coursecouponclub.com/wp-content/uploads/2021/10/602310_ec9f-2048x1152.jpg" alt="HTML CSS icon" class="portfolio__item_img">
@@ -637,9 +644,17 @@
                                     </div>
                                 </div>
                             </a>
-                            
+                        
                         </div>
                     </div>
+                        
+                    
+                </section>
+
+                <section class="section cer none" id="cer">
+                    
+                        
+                    
                 </section>
             </div>
         </main>
@@ -651,19 +666,19 @@
                         <div class="footer__nav">
                             <ul class="footer__nav_list">
                                 <li>
-                                    <a href="" data-section="about" class="footer__nav_link">О себе</a>
+                                    <a href="#about" data-section="about" class="footer__nav_link active">О себе</a>
                                 </li>
     
                                 <li>
-                                    <a href="" data-section="about" class="footer__nav_link">Резюме</a>
+                                    <a href="#resume" data-section="resume" class="footer__nav_link">Резюме</a>
                                 </li>
     
                                 <li>
-                                    <a href="" class="footer__nav_link">Портфолио</a>
+                                    <a href="#portfolio" data-section="portfolio" class="footer__nav_link">Портфолио</a>
                                 </li>
     
                                 <li>
-                                    <a href="" class="footer__nav_link">Сертификаты</a>
+                                    <a href="#cer" data-section="cer" class="footer__nav_link">Сертификаты</a>
                                 </li>
                             </ul>
                         </div>
