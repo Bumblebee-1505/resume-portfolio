@@ -11,14 +11,14 @@ header :is(.orbits, .content){ grid-area: 1/1 }
 .orbits {  
   --orbit-outer-size: 100%;
   --orbit-inner-size: 75%;
-  --orbit-image-size: min(4vw, 3rem);
+  --orbit-image-size: min(4vw, 5rem);
   --orbit-ring-color: hsla(0, 11%, 93%, 0.75);
-  --orbit-ring-thickness: 1px;
+  --orbit-ring-thickness: 2px;
   --orbit-animation-duration: 10s;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  --mask-image: radial-gradient(circle at center, transparent 40%, black 50%);
+  --mask-image: radial-gradient(circle at center, transparent 10%, black 20%);
   -webkit-mask-image: var(--mask-image);
   mask-image: var(--mask-image);
   overflow: hidden;
