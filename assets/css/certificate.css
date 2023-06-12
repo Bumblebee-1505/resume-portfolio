@@ -1,0 +1,28 @@
+.certificate__content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.certificate__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.certificate__item {
+    text-align: center;
+}
+
+.certificate__image {
+    width: 90%;
+    margin-top: 80px;
+}
+
+.certificate__description {
+    font-size: 1.5rem;
+    font-style: italic;
+    padding-top: 20px;
+    line-height: 2rem;
+}
